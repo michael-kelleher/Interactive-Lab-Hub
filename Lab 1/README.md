@@ -57,21 +57,18 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+Intonation is one of the most foundational aspects to singing and it can often be difficult to tell if you are sinigng slightly flat or sharp, especially when you are just starting out as a singer. Getting feedback by listening to yourself afterwards makes it hard to implement the proper fixes because you can't just replicate the physical feeling. Similarly, having a coach give you real-time feedback can be distracting. 
+
+This device uses color and light to provide a visual cue for when you are off pitch. You first scan the music on a phone, then it listens to you sing with a microphone and lights up in various colors to indicate your intonation. You can then easily make the proper adjustments.
+
+**Setting:** Vocal Practice Room really at any point in the day. 
+**Players:** Singers are the primary users, but voice teachers, accompanists, and music directors may also be there.
+**Activity:** Practicing new vocal material or working through vocal technique exercises. 
+**Goals:** To be able to get real-time feedback on your intonation so you can correct your pitch when necessary and build up strong technique
+
 
 \*\***Include pictures of your storyboards here**\*\*
 
@@ -79,14 +76,27 @@ Present your ideas to the other people in your breakout room (or in small groups
 
 \*\***Summarize feedback you got here.**\*\*
 
+One note I got was that it was going to be difficult to just remember the proper color codes (orange being flat and pink being sharp) so there should be a visual indicator with shape as well. 
+
+Another piece of feedback was that just having the information of you being wrongs may not be enough. I think by adding sound that plays the right note when you are far off could be helpful as well. 
+
+Overall, people liked the idea and could see how it could be useful for singers.
 
 ## Part B. Act out the Interaction
 
-Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
-
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Sometimes it was difficult to remember to look at the device when you are focusing on the sheet music. This means that the colors should be bright and the shape big enough to draw attention
+
+It worked better when you are not trying to sing the song at the full speed and rhythm, as you had time to actually make the adjustments and move on. Solidified it as an early practice tool or for technique development. It is less useful for people who just want to quickly go through their material and get a gut check.
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+It could be useful to have a statistics screen so that you can see how far off you were and track progress over time. 
+
+The app could also have built in vocal warm ups and exercises to make it a really useful tool for just building vocal technique in general.
+
+It is interesting  to think about how to apply this to groups singing in harmony. It culd be really useful, but I'd have to figure out how to single out specific voices and how not to have the whole rooom lighitng up chaotically. 
 
 
 ## Part C. Prototype the device
@@ -121,6 +131,9 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Include sketches of what your devices might look like here.**\*\*
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+The biggest concern is making sure that the singer can see the device while they are practicing without additional effort. The mirror-integrated option leverages the mirrors that are in nearly every practice room already for singers to be able to see the physical componenets of their technique and make adjustments. The music stand integrated version simialrly uses a piece of equipment singers are already looking at. 
+
+THe metronome/recorder multi-purpose tool puts multiple devices that are already being used in practice rooms into one item to make it less cumbersome to get all three things set up. 
 
 
 ## Part F. Record
@@ -128,7 +141,7 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Take a video of your prototyped interaction.**\*\*
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+I spoke with Liz Pyshor and Max Dumas about the concept and got their feedback, along with some friends who are professional performers and voice teachers from outside CT, Chloe Nadon-Enriquez and Kelli Morgan McHugh. Thank you to Liz Pyshor for recording
 
 
 
