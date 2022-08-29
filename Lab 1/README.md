@@ -103,15 +103,9 @@ It is interesting  to think about how to apply this to groups singing in harmony
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
-
 \*\***Give us feedback on Tinkerbelle.**\*\*
+
+I was unable to get Tinkerbelle to work on my phone/computer. It had no errors in the terminal window and appeared to be running as expected but when I accessed the url with the IP adress and 5001 port, it just loaded until it timed out. I was unabel to determine what was going wrong, so I worked with a friend who was not having the same issue. 
 
 
 ## Part D. Wizard the device
@@ -119,10 +113,17 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+Working with TinkerBelle
+
+https://user-images.githubusercontent.com/90526300/187264234-1425f6b5-dbcb-42b5-8df9-651454c86c50.MOV
+
+Setting up Costume
+https://user-images.githubusercontent.com/90526300/187264376-af1ca6e6-2122-4189-8666-631b27de8f86.MOV
+
+
 
 \*\***Show the follow-up work here.**\*\*
-
+After trying out the paper prototype, I made changes to how I was blocking out the light from different indicators to make it easier to operate while doing other action. THis helped make a more functional costume. 
 
 ## Part E. Costume the device
 
@@ -145,6 +146,10 @@ THe metronome/recorder multi-purpose tool puts multiple devices that are already
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+
+
+https://user-images.githubusercontent.com/90526300/187264084-5f649cd0-b7c9-4974-a0fc-e9d9a73444a2.MOV
+
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 I spoke with Liz Pyshor and Max Dumas about the concept and got their feedback, along with some friends who are professional performers and voice teachers from outside CT, Chloe Nadon-Enriquez and Kelli Morgan McHugh. Thank you to Liz Pyshor for recording
