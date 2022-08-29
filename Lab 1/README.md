@@ -72,7 +72,9 @@ This device uses color and light to provide a visual cue for when you are off pi
 
 \*\***Include pictures of your storyboards here**\*\*
 
-Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
+![storyboards](https://user-images.githubusercontent.com/90526300/187245000-50ac95f2-da82-4cd3-a4f8-5db9c32b90b3.jpg)
+
+
 
 \*\***Summarize feedback you got here.**\*\*
 
@@ -129,6 +131,10 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your devices might look like here.**\*\*
+
+![Costume1](https://user-images.githubusercontent.com/90526300/187245073-b7f62910-0451-45b0-b53b-f0ad33fb8df6.jpg)
+![Costume2](https://user-images.githubusercontent.com/90526300/187245075-79e3f1f6-e382-484e-875b-697e9f962e05.jpg)
+![costume3](https://user-images.githubusercontent.com/90526300/187245077-6db71a4a-fadd-4eb6-8c20-1f9f00623d9c.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 The biggest concern is making sure that the singer can see the device while they are practicing without additional effort. The mirror-integrated option leverages the mirrors that are in nearly every practice room already for singers to be able to see the physical componenets of their technique and make adjustments. The music stand integrated version simialrly uses a piece of equipment singers are already looking at. 
