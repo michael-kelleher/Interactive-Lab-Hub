@@ -115,10 +115,18 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 Working with TinkerBelle
 
-https://user-images.githubusercontent.com/90526300/187264234-1425f6b5-dbcb-42b5-8df9-651454c86c50.MOV
+
+https://user-images.githubusercontent.com/90526300/187266015-071ab9b8-e996-44c5-b585-109a8da68147.mp4
+
+
+
 
 Setting up Costume
-https://user-images.githubusercontent.com/90526300/187264376-af1ca6e6-2122-4189-8666-631b27de8f86.MOV
+
+
+https://user-images.githubusercontent.com/90526300/187266029-2e0adefe-b6fa-455d-b1fc-cfef6ca9b5a2.mp4
+
+
 
 
 
@@ -148,7 +156,7 @@ THe metronome/recorder multi-purpose tool puts multiple devices that are already
 \*\***Take a video of your prototyped interaction.**\*\*
 
 
-https://user-images.githubusercontent.com/90526300/187264084-5f649cd0-b7c9-4974-a0fc-e9d9a73444a2.MOV
+https://user-images.githubusercontent.com/90526300/187266071-e9081816-45c1-4920-bb0a-f5ee74297de6.mp4
 
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
