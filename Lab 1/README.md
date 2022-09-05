@@ -210,3 +210,19 @@ Progress over Time
 
 Standard Use case
 ![d](https://user-images.githubusercontent.com/90526300/188492527-d03a57d0-a244-4608-8ae6-e04fd53cbcb5.jpg)
+
+**Videos**
+
+*Pitch correction with noise*
+https://user-images.githubusercontent.com/90526300/188492671-b2196ba5-8b16-44a9-bee6-46f82bed3a07.MOV
+
+
+*Tool for stage managers to know whether they need to call a vocal rehearsal*
+https://user-images.githubusercontent.com/90526300/188492698-a9a428a4-a7fa-496d-9cd2-63b1083a27df.mov
+https://user-images.githubusercontent.com/90526300/188492706-76ef9e68-e5c1-43c2-9286-7066ff82cbb1.mov
+
+*Tool for Music Directors to know which voice part is off-pitch*
+https://user-images.githubusercontent.com/90526300/188493310-8fe6ed10-7aa3-4d06-a819-82eebf6f0ead.mov
+
+
+
