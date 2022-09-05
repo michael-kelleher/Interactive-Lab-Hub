@@ -191,15 +191,22 @@ Do last week’s assignment again, but this time:
 **Storyboards**
 
 Buzz on smartwatch or phone when you're off pitch
+![e](https://user-images.githubusercontent.com/90526300/188492564-8ecfefb4-373f-4d4c-af6d-e83970d9cc95.jpg)
 
 Stage Manager rehearsal calling tool
+![g](https://user-images.githubusercontent.com/90526300/188492601-eab804b6-0db6-4ab5-9437-df959c099ea5.jpg)
 
 MD Teaching harmonies
+![f](https://user-images.githubusercontent.com/90526300/188492585-91af24e9-f099-4a47-8bf1-2d8c3b49a887.jpg)
 
 Plays note when wrong
+![a](https://user-images.githubusercontent.com/90526300/188492420-69814fcf-01af-4077-986d-eba3fafe1ac1.jpg)
 
 Ear Training Tool
+![c](https://user-images.githubusercontent.com/90526300/188492487-3962219b-18f6-422f-8c60-bb6d5cf5d09f.jpg)
 
 Progress over Time
+![b](https://user-images.githubusercontent.com/90526300/188492455-c1ffe73f-ca7e-43c5-aafb-0a162e2fd163.jpg)
 
 Standard Use case
+![d](https://user-images.githubusercontent.com/90526300/188492527-d03a57d0-a244-4608-8ae6-e04fd53cbcb5.jpg)
