@@ -214,15 +214,17 @@ Standard Use case
 **Videos**
 
 *Pitch correction with noise*
-https://user-images.githubusercontent.com/90526300/188492671-b2196ba5-8b16-44a9-bee6-46f82bed3a07.MOV
+https://user-images.githubusercontent.com/90526300/188493896-4eaaa866-3a16-4e6a-9a33-cacf6e797964.mp4
 
 
 *Tool for stage managers to know whether they need to call a vocal rehearsal*
-https://user-images.githubusercontent.com/90526300/188492698-a9a428a4-a7fa-496d-9cd2-63b1083a27df.mov
-https://user-images.githubusercontent.com/90526300/188492706-76ef9e68-e5c1-43c2-9286-7066ff82cbb1.mov
+https://user-images.githubusercontent.com/90526300/188493810-597f57a2-663d-45cb-9db2-72fae1e469ed.mp4
+
 
 *Tool for Music Directors to know which voice part is off-pitch*
-https://user-images.githubusercontent.com/90526300/188493310-8fe6ed10-7aa3-4d06-a819-82eebf6f0ead.mov
+https://user-images.githubusercontent.com/90526300/188493886-bfa1e362-c58f-4dd1-ae63-3c511b509203.mp4
+
+
 
 
 
