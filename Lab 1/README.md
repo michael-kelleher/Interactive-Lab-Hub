@@ -160,7 +160,7 @@ https://user-images.githubusercontent.com/90526300/187266071-e9081816-45c1-4920-
 
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-I spoke with Liz Pyshor and Max Dumas about the concept and got their feedback, along with some friends who are professional performers and voice teachers from outside CT, Chloe Nadon-Enriquez and Kelli Morgan McHugh. Thank you to Liz Pyshor for recording
+I spoke with Liz Pysher and Max Dumas about the concept and got their feedback, along with some friends who are professional performers and voice teachers from outside CT, Chloe Nadon-Enriquez and Kelli Morgan McHugh. Thank you to Liz Pysher for recording
 
 
 
@@ -171,9 +171,13 @@ This describes the second week's work for this lab activity.
 
 ## Prep (to be done before Lab on Wednesday)
 
-You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
+
 
 \*\***Summarize feedback from your partners here.**\*\*
+
+My online feedback surfaced 2 points of potential improvement. First, one reviewer suggested expanding it to groups and thinking through how that interaction would look. The other  was documenting more examples of potential use cases. Aside from that, the reviewers agreed with some of my thinking regariding why it would be difficult to memorize a color scheme, which led to the costuming decision with arrows. They seemed to like the concept overall and said that the video was clear and direct. 
+
+In class I regrouped with Heusiu Kim, Liz Pysher, Sidarth Wadhwa, and Sylvia Ding to get further feedback. Again, the feedback was in line with my expectations. We spoke significantly about other ways to expand the tool by focusing on harmonies, providing tools for teachers and music directors to analyze performance, and for users to see progress over time. 
 
 ## Make it your own
 
@@ -183,3 +187,19 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+**Storyboards**
+
+Buzz on smartwatch or phone when you're off pitch
+
+Stage Manager rehearsal calling tool
+
+MD Teaching harmonies
+
+Plays note when wrong
+
+Ear Training Tool
+
+Progress over Time
+
+Standard Use case
