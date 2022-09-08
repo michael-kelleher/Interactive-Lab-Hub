@@ -162,6 +162,11 @@ https://user-images.githubusercontent.com/90526300/189126715-90bbf135-3f60-43e9-
 ### Set up the Display Clock Demo
 Work on `screen_clock.py`, try to show the time by filling in the while loop (at the bottom of the script where we noted "TODO" for you). You can use the code in `cli_clock.py` and `stats.py` to figure this out.
 
+
+
+https://user-images.githubusercontent.com/90526300/189135187-781ec15c-e885-4bc7-8f00-ecbf181cc83a.mp4
+
+
 ### How to Edit Scripts on Pi
 Option 1. One of the ways for you to edit scripts on Pi through terminal is using [`nano`](https://linuxize.com/post/how-to-use-nano-text-editor/) command. You can go into the `screen_clock.py` by typing the follow command line:
 ```
