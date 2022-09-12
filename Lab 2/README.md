@@ -151,74 +151,46 @@ You can look in `stats.py` for how to display text on the screen!
 
 #### Displaying an image
 
-You can look in `image.py` for an example of how to display an image on the screen. Can you make it switch to another image when you push one of the buttons?
-
-
 
 https://user-images.githubusercontent.com/90526300/189126715-90bbf135-3f60-43e9-a4cb-ad0edb4b82d6.mp4
 
 
 ## Part D. 
 ### Set up the Display Clock Demo
-Work on `screen_clock.py`, try to show the time by filling in the while loop (at the bottom of the script where we noted "TODO" for you). You can use the code in `cli_clock.py` and `stats.py` to figure this out.
-
-
+See below for video of updated screen_clock.py that shows images based on button presses
 
 https://user-images.githubusercontent.com/90526300/189135187-781ec15c-e885-4bc7-8f00-ecbf181cc83a.mp4
-
-
-### How to Edit Scripts on Pi
-Option 1. One of the ways for you to edit scripts on Pi through terminal is using [`nano`](https://linuxize.com/post/how-to-use-nano-text-editor/) command. You can go into the `screen_clock.py` by typing the follow command line:
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ nano screen_clock.py
-```
-You can make changes to the script this way, remember to save the changes by pressing `ctrl-o` and press enter again. You can press `ctrl-x` to exit the nano mode. There are more options listed down in the terminal you can use in nano.
-
-Option 2. Another way for you to edit scripts is to use VNC on your laptop to remotely connect your Pi. Try to open the files directly like what you will do with your laptop and edit them. Since the default OS we have for you does not come up a python programmer, you will have to install one yourself otherwise you will have to edit the codes with text editor. [Thonny IDE](https://thonny.org/) is a good option for you to install, try run the following command lines in your Pi's ternimal:
-
-  ```
-  pi@ixe00:~ $ sudo apt install thonny
-  pi@ixe00:~ $ sudo apt update && sudo apt upgrade -y
-  ```
-
-Now you should be able to edit python scripts with Thonny on your Pi.
 
 
 
 ## Part E.
 ### Modify the barebones clock to make it your own
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
 
-Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
-
-Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
 [Verplank Diagram](https://github.com/michael-kelleher/Interactive-Lab-Hub/files/9549612/Scanned.Documents.2.pdf)
 
-TimeToWatch allows people to get tv/movie recommendations that will fit in their calendars before their next scheduled event. It uses TV episodes as variable units of time and presents the content to the user dyanmically as the time before that meeting changes
+TimeToWatch allows people to get tv/movie recommendations that will fit in their calendars before their next scheduled event. It uses TV episodes as variable units of time and presents the content to the user dyanmically as the time before that meeting changes. 
 
-\*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
+It directly accesses a user's Google calendar, and gets the time of their next event. It then calculates how much time they have left and cross references a list of IMDB's 250 highest rated movies. It then displays the poster of the longest movie(s) that will fit within the available window. If there are ties, it will pick one at random. It all updates every 2 seconds and immediately responds to new updates on the Google calendar.
 
-After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
+Link to code (in repo): https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%202/movie_clock.py
 
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git add .
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git commit -m 'your commit message here'
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git push
-```
-
-After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
 
 
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-\*\*\***Take a video of your PiClock.**\*\*\*
+
+
+https://user-images.githubusercontent.com/90526300/189772524-b669778d-bfe3-4b3c-87b4-47d6da252b80.mp4
+
+
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-
+ 
+ Next up is using the buttons and/or the joystick to allow users to select from multiple movies/episodes. I also want to look into connecting it with a second, larger display and automatically playing the chosen content on a user's streaming account. I also want to explore the design space of how a user could create custom watch lists instead of relying on the IMDB top 250. 
 
 # Prep for Part 2
 
