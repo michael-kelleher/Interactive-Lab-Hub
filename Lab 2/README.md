@@ -194,8 +194,9 @@ Can you make time interactive? You can look in `screen_test.py` for examples for
 
 Please sketch/diagram your clock idea. (Try using a [Verplank digram](http://www.billverplank.com/IxDSketchBook.pdf)!
 
-**We strongly discourage and will reject the results of literal digital or analog clock display.**
+[Scanned Documents 2.pdf](https://github.com/michael-kelleher/Interactive-Lab-Hub/files/9549612/Scanned.Documents.2.pdf)
 
+TimeToWatch allows people to get tv/movie recommendations that will fit in their calendars before their next scheduled event. It uses TV episodes as variable units of time and presents the content to the user dyanmically as the time before that meeting changes
 
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
 
