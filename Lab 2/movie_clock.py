@@ -7,6 +7,8 @@ import os.path
 
 import pandas as pd
 import random
+import requests
+from io import BytesIO
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
