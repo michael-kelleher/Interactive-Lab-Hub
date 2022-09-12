@@ -124,6 +124,7 @@ def main():
                 while returnedTime not in runtimes:
                     returnedTime = returnedTime - 1
             options = df.loc[df['Runtime'] == returnedTime]
+            ind = 0
 
             if options.shape[0] == 1:
                 ind = 0
@@ -159,6 +160,7 @@ def main():
             image = image.crop((x, y, x + width, y + height))
 
             disp.image(image)
+            sleep(2)
 
 
 
