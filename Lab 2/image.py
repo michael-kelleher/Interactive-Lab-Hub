@@ -75,6 +75,7 @@ draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image)
 
 image = Image.open("red.jpg")
+image2 = Image.open("nu")
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
@@ -96,6 +97,31 @@ x = scaled_width // 2 - width // 2
 y = scaled_height // 2 - height // 2
 image = image.crop((x, y, x + width, y + height))
 
-# Display image.
-disp.image(image)
+image_ratio = image2.width / image2.height
+screen_ratio = width / height
+if screen_ratio < image_ratio:
+    scaled_width = image2.width * height // image2.height
+    scaled_height = height
+else:
+    scaled_width = width
+    scaled_height = image2.height * width // image2.width
+image2 = image2.resize((scaled_width, scaled_height), Image.BICUBIC)
+
+# Crop and center the image
+x = scaled_width // 2 - width // 2
+y = scaled_height // 2 - height // 2
+image2 = image2.crop((x, y, x + width, y + height))
+
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
+
+
+while True:
+    if buttonA.value and buttonB.value:
+        disp.image(image)
+    else:
+        disp.image(image2)
 

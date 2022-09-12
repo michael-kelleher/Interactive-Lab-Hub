@@ -57,49 +57,55 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+Intonation is one of the most foundational aspects to singing and it can often be difficult to tell if you are sinigng slightly flat or sharp, especially when you are just starting out as a singer. Getting feedback by listening to yourself afterwards makes it hard to implement the proper fixes because you can't just replicate the physical feeling. Similarly, having a coach give you real-time feedback can be distracting. 
+
+This device uses color and light to provide a visual cue for when you are off pitch. You first scan the music on a phone, then it listens to you sing with a microphone and lights up in various colors to indicate your intonation. You can then easily make the proper adjustments.
+
+**Setting:** Vocal Practice Room really at any point in the day. 
+**Players:** Singers are the primary users, but voice teachers, accompanists, and music directors may also be there.
+**Activity:** Practicing new vocal material or working through vocal technique exercises. 
+**Goals:** To be able to get real-time feedback on your intonation so you can correct your pitch when necessary and build up strong technique
+
 
 \*\***Include pictures of your storyboards here**\*\*
 
-Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
+![storyboards](https://user-images.githubusercontent.com/90526300/187245000-50ac95f2-da82-4cd3-a4f8-5db9c32b90b3.jpg)
+
+
 
 \*\***Summarize feedback you got here.**\*\*
 
+One note I got was that it was going to be difficult to just remember the proper color codes (orange being flat and pink being sharp) so there should be a visual indicator with shape as well. 
+
+Another piece of feedback was that just having the information of you being wrongs may not be enough. I think by adding sound that plays the right note when you are far off could be helpful as well. 
+
+Overall, people liked the idea and could see how it could be useful for singers.
 
 ## Part B. Act out the Interaction
 
-Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
-
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Sometimes it was difficult to remember to look at the device when you are focusing on the sheet music. This means that the colors should be bright and the shape big enough to draw attention
+
+It worked better when you are not trying to sing the song at the full speed and rhythm, as you had time to actually make the adjustments and move on. Solidified it as an early practice tool or for technique development. It is less useful for people who just want to quickly go through their material and get a gut check.
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+It could be useful to have a statistics screen so that you can see how far off you were and track progress over time. 
+
+The app could also have built in vocal warm ups and exercises to make it a really useful tool for just building vocal technique in general.
+
+It is interesting  to think about how to apply this to groups singing in harmony. It culd be really useful, but I'd have to figure out how to single out specific voices and how not to have the whole rooom lighitng up chaotically. 
 
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
-
 \*\***Give us feedback on Tinkerbelle.**\*\*
+
+I was unable to get Tinkerbelle to work on my phone/computer. It had no errors in the terminal window and appeared to be running as expected but when I accessed the url with the IP adress and 5001 port, it just loaded until it timed out. I was unabel to determine what was going wrong, so I worked with a friend who was not having the same issue. 
 
 
 ## Part D. Wizard the device
@@ -107,10 +113,25 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+Working with TinkerBelle
+
+
+https://user-images.githubusercontent.com/90526300/187266015-071ab9b8-e996-44c5-b585-109a8da68147.mp4
+
+
+
+
+Setting up Costume
+
+
+https://user-images.githubusercontent.com/90526300/187266029-2e0adefe-b6fa-455d-b1fc-cfef6ca9b5a2.mp4
+
+
+
+
 
 \*\***Show the follow-up work here.**\*\*
-
+After trying out the paper prototype, I made changes to how I was blocking out the light from different indicators to make it easier to operate while doing other action. THis helped make a more functional costume. 
 
 ## Part E. Costume the device
 
@@ -120,15 +141,26 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+![Costume1](https://user-images.githubusercontent.com/90526300/187245073-b7f62910-0451-45b0-b53b-f0ad33fb8df6.jpg)
+![Costume2](https://user-images.githubusercontent.com/90526300/187245075-79e3f1f6-e382-484e-875b-697e9f962e05.jpg)
+![costume3](https://user-images.githubusercontent.com/90526300/187245077-6db71a4a-fadd-4eb6-8c20-1f9f00623d9c.jpg)
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+The biggest concern is making sure that the singer can see the device while they are practicing without additional effort. The mirror-integrated option leverages the mirrors that are in nearly every practice room already for singers to be able to see the physical componenets of their technique and make adjustments. The music stand integrated version simialrly uses a piece of equipment singers are already looking at. 
+
+THe metronome/recorder multi-purpose tool puts multiple devices that are already being used in practice rooms into one item to make it less cumbersome to get all three things set up. 
 
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+
+https://user-images.githubusercontent.com/90526300/187266071-e9081816-45c1-4920-bb0a-f5ee74297de6.mp4
+
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+I spoke with Liz Pysher and Max Dumas about the concept and got their feedback, along with some friends who are professional performers and voice teachers from outside CT, Chloe Nadon-Enriquez and Kelli Morgan McHugh. Thank you to Liz Pysher for recording
 
 
 
@@ -139,9 +171,13 @@ This describes the second week's work for this lab activity.
 
 ## Prep (to be done before Lab on Wednesday)
 
-You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
+
 
 \*\***Summarize feedback from your partners here.**\*\*
+
+My online feedback surfaced 2 points of potential improvement. First, one reviewer suggested expanding it to groups and thinking through how that interaction would look. The other  was documenting more examples of potential use cases. Aside from that, the reviewers agreed with some of my thinking regariding why it would be difficult to memorize a color scheme, which led to the costuming decision with arrows. They seemed to like the concept overall and said that the video was clear and direct. 
+
+In class I regrouped with Heusiu Kim, Liz Pysher, Sidarth Wadhwa, and Sylvia Ding to get further feedback. Again, the feedback was in line with my expectations. We spoke significantly about other ways to expand the tool by focusing on harmonies, providing tools for teachers and music directors to analyze performance, and for users to see progress over time. 
 
 ## Make it your own
 
@@ -151,3 +187,44 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+**Storyboards**
+
+Buzz on smartwatch or phone when you're off pitch
+![e](https://user-images.githubusercontent.com/90526300/188492564-8ecfefb4-373f-4d4c-af6d-e83970d9cc95.jpg)
+
+Stage Manager rehearsal calling tool
+![g](https://user-images.githubusercontent.com/90526300/188492601-eab804b6-0db6-4ab5-9437-df959c099ea5.jpg)
+
+MD Teaching harmonies
+![f](https://user-images.githubusercontent.com/90526300/188492585-91af24e9-f099-4a47-8bf1-2d8c3b49a887.jpg)
+
+Plays note when wrong
+![a](https://user-images.githubusercontent.com/90526300/188492420-69814fcf-01af-4077-986d-eba3fafe1ac1.jpg)
+
+Ear Training Tool
+![c](https://user-images.githubusercontent.com/90526300/188492487-3962219b-18f6-422f-8c60-bb6d5cf5d09f.jpg)
+
+Progress over Time
+![b](https://user-images.githubusercontent.com/90526300/188492455-c1ffe73f-ca7e-43c5-aafb-0a162e2fd163.jpg)
+
+Standard Use case
+![d](https://user-images.githubusercontent.com/90526300/188492527-d03a57d0-a244-4608-8ae6-e04fd53cbcb5.jpg)
+
+**Videos**
+
+*Pitch correction with noise*
+https://user-images.githubusercontent.com/90526300/188493896-4eaaa866-3a16-4e6a-9a33-cacf6e797964.mp4
+
+
+*Tool for stage managers to know whether they need to call a vocal rehearsal*
+https://user-images.githubusercontent.com/90526300/188493810-597f57a2-663d-45cb-9db2-72fae1e469ed.mp4
+
+
+*Tool for Music Directors to know which voice part is off-pitch*
+https://user-images.githubusercontent.com/90526300/188493886-bfa1e362-c58f-4dd1-ae63-3c511b509203.mp4
+
+
+
+
+
