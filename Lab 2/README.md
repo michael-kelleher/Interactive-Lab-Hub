@@ -187,12 +187,7 @@ This Stack Overflow thread helped working with URLs for images: https://stackove
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-
-
-https://user-images.githubusercontent.com/90526300/189772524-b669778d-bfe3-4b3c-87b4-47d6da252b80.mp4!
-
-
-
+https://user-images.githubusercontent.com/90526300/189774671-72362307-b700-4dc5-bf6a-35b8ad92f66e.mp4
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
@@ -200,7 +195,8 @@ https://user-images.githubusercontent.com/90526300/189772524-b669778d-bfe3-4b3c-
  Next up is using the buttons and/or the joystick to allow users to select from multiple movies/episodes. I also want to look into connecting it with a second, larger display and automatically playing the chosen content on a user's streaming account. I also want to explore the design space of how a user could create custom watch lists instead of relying on the IMDB top 250. 
  
  
- ![Uploading IMG_1119.jpg…]()
+![IMG_1119](https://user-images.githubusercontent.com/90526300/189774716-229c8298-f98f-4044-a226-ea9aed00bf1f.jpg)
+
 
 
 # Prep for Part 2
