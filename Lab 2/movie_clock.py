@@ -14,15 +14,59 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-# while True:
-#     print (strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
-#     print("\r", end="", flush=True)
-#     sleep(1)
+import digitalio
+import board
+from PIL import Image, ImageDraw
+import adafruit_rgb_display.ili9341 as ili9341
+import adafruit_rgb_display.st7789 as st7789  # pylint: disable=unused-import
+import adafruit_rgb_display.hx8357 as hx8357  # pylint: disable=unused-import
+import adafruit_rgb_display.st7735 as st7735  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1351 as ssd1351  # pylint: disable=unused-import
+import adafruit_rgb_display.ssd1331 as ssd1331  # pylint: disable=unused-import
+
 
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
 
 def main():
+
+    cs_pin = digitalio.DigitalInOut(board.CE0)
+    dc_pin = digitalio.DigitalInOut(board.D25)
+    reset_pin = digitalio.DigitalInOut(board.D24)
+
+    # Config for display baudrate (default max is 24mhz):
+    BAUDRATE = 24000000
+
+    # Setup SPI bus using hardware SPI:
+    spi = board.SPI()
+
+    disp = st7789.ST7789(
+        spi,
+        cs=cs_pin,
+        dc=dc_pin,
+        rst=reset_pin,
+        baudrate=BAUDRATE,
+        width=135,
+        height=240,
+        x_offset=53,
+        y_offset=40,
+    )
+
+    if disp.rotation % 180 == 90:
+        height = disp.width  # we swap height/width to rotate it to landscape!
+        width = disp.height
+    else:
+        width = disp.width  # we swap height/width to rotate it to landscape!
+        height = disp.height
+    image = Image.new("RGB", (width, height))
+
+    # Get drawing object to draw on image.
+    draw = ImageDraw.Draw(image)
+
+    # Draw a black filled box to clear the image.
+    draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+    disp.image(image)
+
     df = pd.read_csv ('movies.csv')
     runtimes = marks_list = df['Runtime'].tolist()
 
@@ -83,8 +127,35 @@ def main():
         else:
             ind = random.randrange(options.shape[1])
         title = options["Title"].tolist()[ind]
-        image = options["Image"].tolist()[ind]
-        print(title, image)
+        imageURL = options["Image"].tolist()[ind]
+        print(title, imageURL)
+
+        response = requests.get(imageURL)
+
+        image = Image.open(BytesIO(response.content))
+
+        backlight = digitalio.DigitalInOut(board.D22)
+        backlight.switch_to_output()
+        backlight.value = True
+
+
+        # Scale the image to the smaller screen dimension
+        image_ratio = image.width / image.height
+        screen_ratio = width / height
+        if screen_ratio < image_ratio:
+            scaled_width = image.width * height // image.height
+            scaled_height = height
+        else:
+            scaled_width = width
+            scaled_height = image.height * width // image.width
+        image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+
+        # Crop and center the image
+        x = scaled_width // 2 - width // 2
+        y = scaled_height // 2 - height // 2
+        image = image.crop((x, y, x + width, y + height))
+
+        disp.image(image)
 
 
 
@@ -102,5 +173,4 @@ def main():
 
 if __name__ == '__main__':
 
-    while True:
-        main()
+    main()
