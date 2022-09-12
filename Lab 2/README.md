@@ -176,6 +176,11 @@ It directly accesses a user's Google calendar, and gets the time of their next e
 
 Link to code (in repo): https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%202/movie_clock.py
 
+References:
+I utilized the following guide and code from Google to work with the calendar API: https://developers.google.com/calendar/api/quickstart/python
+This Stack Overflow thread helped working with URLs for images: https://stackoverflow.com/questions/7391945/how-do-i-read-image-data-from-a-url-in-python
+
+
 
 
 ## Part F. 
