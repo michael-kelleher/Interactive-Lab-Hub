@@ -97,67 +97,68 @@ def main():
         service = build('calendar', 'v3', credentials=creds)
 
         # Call the Calendar API
-        now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+        while True:
+            now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
 
-        events_result = service.events().list(calendarId='primary', timeMin=now,
-                                              maxResults=1, singleEvents=True,
-                                              orderBy='startTime').execute()
-        event = events_result.get('items', [])[0]
+            events_result = service.events().list(calendarId='primary', timeMin=now,
+                                                  maxResults=1, singleEvents=True,
+                                                  orderBy='startTime').execute()
+            event = events_result.get('items', [])[0]
 
-        if not event:
-            print('No upcoming events found.')
-            return
+            if not event:
+                print('No upcoming events found.')
+                return
 
-        # Prints the start and name of the next 10 events
+            # Prints the start and name of the next 10 events
 
-        start = event['start'].get('dateTime')
-        #print("time until next event in minutes")
+            start = event['start'].get('dateTime')
+            #print("time until next event in minutes")
 
-        dist = datetime.datetime.strptime(start[:-6], '%Y-%m-%dT%H:%M:%S')- datetime.datetime.now()
-        minute = dist.seconds//60
-        returnedTime = minute
+            dist = datetime.datetime.strptime(start[:-6], '%Y-%m-%dT%H:%M:%S')- datetime.datetime.now()
+            minute = dist.seconds//60
+            returnedTime = minute
 
-        if minute > max(runtimes):
-            returnedTime = max(runtimes)
-        else:
-            while returnedTime not in runtimes:
-                returnedTime = returnedTime - 1
-        options = df.loc[df['Runtime'] == returnedTime]
+            if minute > max(runtimes):
+                returnedTime = max(runtimes)
+            else:
+                while returnedTime not in runtimes:
+                    returnedTime = returnedTime - 1
+            options = df.loc[df['Runtime'] == returnedTime]
 
-        if options.shape[0] == 1:
-            ind = 0
-        else:
-            ind = random.randrange(options.shape[1])
-        title = options["Title"].tolist()[ind]
-        imageURL = options["Image"].tolist()[ind]
-        print(title, imageURL)
+            if options.shape[0] == 1:
+                ind = 0
+            else:
+                ind = random.randrange(options.shape[1])
+            title = options["Title"].tolist()[ind]
+            imageURL = options["Image"].tolist()[ind]
+            print(title, imageURL)
 
-        response = requests.get(imageURL)
+            response = requests.get(imageURL)
 
-        image = Image.open(BytesIO(response.content))
+            image = Image.open(BytesIO(response.content))
 
-        backlight = digitalio.DigitalInOut(board.D22)
-        backlight.switch_to_output()
-        backlight.value = True
+            backlight = digitalio.DigitalInOut(board.D22)
+            backlight.switch_to_output()
+            backlight.value = True
 
 
-        # Scale the image to the smaller screen dimension
-        image_ratio = image.width / image.height
-        screen_ratio = width / height
-        if screen_ratio < image_ratio:
-            scaled_width = image.width * height // image.height
-            scaled_height = height
-        else:
-            scaled_width = width
-            scaled_height = image.height * width // image.width
-        image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+            # Scale the image to the smaller screen dimension
+            image_ratio = image.width / image.height
+            screen_ratio = width / height
+            if screen_ratio < image_ratio:
+                scaled_width = image.width * height // image.height
+                scaled_height = height
+            else:
+                scaled_width = width
+                scaled_height = image.height * width // image.width
+            image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
 
-        # Crop and center the image
-        x = scaled_width // 2 - width // 2
-        y = scaled_height // 2 - height // 2
-        image = image.crop((x, y, x + width, y + height))
+            # Crop and center the image
+            x = scaled_width // 2 - width // 2
+            y = scaled_height // 2 - height // 2
+            image = image.crop((x, y, x + width, y + height))
 
-        disp.image(image)
+            disp.image(image)
 
 
 
