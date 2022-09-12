@@ -168,7 +168,8 @@ https://user-images.githubusercontent.com/90526300/189135187-781ec15c-e885-4bc7-
 
 
 
-[Verplank Diagram](https://github.com/michael-kelleher/Interactive-Lab-Hub/files/9549612/Scanned.Documents.2.pdf)
+[Verplank Diagram pdf](https://github.com/michael-kelleher/Interactive-Lab-Hub/files/9549612/Scanned.Documents.2.pdf)
+<img width="1024" alt="Screen Shot 2022-09-12 at 7 02 31 PM" src="https://user-images.githubusercontent.com/90526300/189773126-3757a0eb-0e6d-42a4-bd02-e260312f7e4a.png">
 
 TimeToWatch allows people to get tv/movie recommendations that will fit in their calendars before their next scheduled event. It uses TV episodes as variable units of time and presents the content to the user dyanmically as the time before that meeting changes. 
 
