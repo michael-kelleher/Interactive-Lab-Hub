@@ -1,5 +1,5 @@
 # Interactive Prototyping: The Clock of Pi
-**NAMES OF COLLABORATORS HERE**
+**Indpendent Work - Michael Kelleher**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -190,6 +190,8 @@ This Stack Overflow thread helped working with URLs for images: https://stackove
 
 https://user-images.githubusercontent.com/90526300/189774671-72362307-b700-4dc5-bf6a-35b8ad92f66e.mp4
 
+I also showed this to my friends Jessie Baldinger and Abby Doermann (non-CT) and synced it up with their Google Calendars. They had a fun time with it, and we actually watched the recommended movie, Forrest Gump. They did indicate that it would be better as an app rather than a standalone device and that they would much prefer if they could customize a watch list and go through multiple options
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
  
@@ -208,6 +210,8 @@ https://user-images.githubusercontent.com/90526300/189774671-72362307-b700-4dc5-
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
 
 # Lab 2 Part 2
+
+First I got feedback from Siddharth Wadhwa and Heusiu Kim. They liked the integration with Google Calendar and the display of the movie posters. One idea they seemed interested in was how it could be used to plan future events instead of only being used for what movie to watch right now. They said it could ping users with suggestions for later in the day (e.g. "You have 102 minutes of free time at 4:00, do you want to watch Singin' in the Rain?"). THe other big suggestion was to flesh out the interaction on the device itself. Currently it is pretty passive with most of the interaction happening on the computer/phone using Google calendar. THe suggested being able to scroll through possible movies, and to have an on/off button. Both are good ideas. Other thoughts included being able to share calendars with friends to synchronize opportunities for watch parties. 
 
 Pull Interactive Lab Hub updates to your repo.
 
