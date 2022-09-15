@@ -190,7 +190,7 @@ This Stack Overflow thread helped working with URLs for images: https://stackove
 
 https://user-images.githubusercontent.com/90526300/189774671-72362307-b700-4dc5-bf6a-35b8ad92f66e.mp4
 
-I also showed this to my friends Jessie Baldinger and Abby Doermann (non-CT) and synced it up with their Google Calendars. They had a fun time with it, and we actually watched the recommended movie, Forrest Gump. They did indicate that it would be better as an app rather than a standalone device and that they would much prefer if they could customize a watch list and go through multiple options
+I also showed the device to my friends Jessie Baldinger and Abby Doermann (non-CT) and synced it up with their Google Calendars. They had a fun time with it, and we actually watched the recommended movie, Forrest Gump. They did indicate that it would be better as an app rather than a standalone device and that they would much prefer if they could customize a watch list and go through multiple options
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
