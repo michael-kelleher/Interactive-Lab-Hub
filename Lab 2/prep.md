@@ -25,10 +25,9 @@ Download and use the ``.img`` file in the Raspberry Pi Imager.
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/pi_imager_os_select.png" alt="choose os" height="200" />
 
-3. Click the gear icon on the bottom right to open Advanced Settings. In here, you need to make three changes:
+3. Click the gear icon on the bottom right to open Advanced Settings. In here, you need to make two changes:
 - change the "hostname" to something unique
 - set the password for user "pi" to something unique to you that you can remember
-- configure wireless LAN with your home WiFi SSID and password
 
 4. Eject or unmount the microSD card reader, and then remove the SD card from the reader and reinsert it into SD card slot on the Pi: it is located on the bottom (silver rectangle on the right).
 
@@ -97,7 +96,7 @@ Unlike your laptop, the Pi doesn't come with its own keyboard or mouse. While yo
 	```
 	````
 	
-	The initial setting of your Pi's password is `raspberry`, type it and press enter. Note: the terminal will not show what you type for security so do not worry about it and just make sure you type the correct password. After that, you should see something similar to this:	
+	If you set your password in the Advanced Settings during imaging, enter that password. If you didn't, the initial setting of your Pi's password is `raspberry`, type it and press enter. Note: the terminal will not show what you type for security so do not worry about it and just make sure you type the correct password. After that, you should see something similar to this:	
 	
 	````
 	```shell
@@ -128,13 +127,37 @@ Unlike your laptop, the Pi doesn't come with its own keyboard or mouse. While yo
 	```
 
 
-### Change the password of your Pi
+### If you didn't already set your password, change the password of your Pi
 
 Because the Pi asked you to! Also to keep your Pi from getting hacked. Write it down somewhere because we do not know how to recover lost passwords on the Pi. In the terminal on your Pi, type `sudo raspi-config` and press enter, you should be able to see the manual of your Pi:
 <img src="https://www.raspberrypi.org/documentation/computers/images/raspi-config.png" alt="Pi configuration" height="200" />
 
 Choose '1. System Options' and 'S3 Password', they terminal will then ask you to enter your new password. Again, the terminal will not show what you type for security so do not worry about it and just make sure you type the correct new password twice. After you change the password successfully, you will have to use the new password next time you SSH to your Pi.
 
+### (Optional) Add additional WiFi networks
+
+This is for if you are not living in The House and want to connect to a WiFi network that isn't Red Rover or The House. 
+In the terminal on your Pi, type in 
+```$ nano /etc/wpa_supplicant/wpa_supplicant.conf ```
+
+You should see a list of WiFi login details in this file:
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+        ssid="RedRover"
+        key_mgmt=NONE
+}
+
+network={
+        ssid="The House"
+        key_mgmt=NONE
+}
+```
+
+Under "The House" and "RedRover", add your home WiFi name and password to the bottom of the file. 
 
 ### Refresh your knowledge of command line interfaces: 
 
