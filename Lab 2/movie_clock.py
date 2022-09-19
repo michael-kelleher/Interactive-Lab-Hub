@@ -18,7 +18,7 @@ from googleapiclient.errors import HttpError
 
 import digitalio
 import board
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 import adafruit_rgb_display.ili9341 as ili9341
 import adafruit_rgb_display.st7789 as st7789  # pylint: disable=unused-import
 import adafruit_rgb_display.hx8357 as hx8357  # pylint: disable=unused-import
@@ -31,10 +31,40 @@ SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
 
 def main():
+    def sync(num):
+        now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+
+        events_result = service.events().list(calendarId='primary', timeMin=now,
+                                                      maxResults=1, singleEvents=True,
+                                                      orderBy='startTime').execute()
+        event = events_result.get('items', [])[0]
+
+        if not event:
+            print('No upcoming events found.')
+            return
+
+                # Prints the start and name of the next 10 events
+
+        start = event['start'].get('dateTime')
+                #print("time until next event in minutes")
+
+        dist = datetime.datetime.strptime(start[:-6], '%Y-%m-%dT%H:%M:%S')- datetime.datetime.now()
+        minute = dist.seconds//60
+        returnedTime = minute
+
+        if minute > max(runtimes):
+            returnedTime = max(runtimes)
+        else:
+            while returnedTime not in runtimes:
+                returnedTime = returnedTime - 1
+        options = df.loc[df['Runtime'] <= returnedTime][-num:]
+        return options
 
     cs_pin = digitalio.DigitalInOut(board.CE0)
     dc_pin = digitalio.DigitalInOut(board.D25)
     reset_pin = digitalio.DigitalInOut(board.D24)
+    
+    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
     # Config for display baudrate (default max is 24mhz):
     BAUDRATE = 24000000
@@ -53,13 +83,18 @@ def main():
         x_offset=53,
         y_offset=40,
     )
+    
+    buttonA = digitalio.DigitalInOut(board.D23)
+    buttonB = digitalio.DigitalInOut(board.D24)
+    buttonA.switch_to_input()
+    buttonB.switch_to_input()
 
     if disp.rotation % 180 == 90:
         height = disp.width  # we swap height/width to rotate it to landscape!
-        width = disp.height
+        width = disp.height 
     else:
         width = disp.width  # we swap height/width to rotate it to landscape!
-        height = disp.height
+        height = disp.height 
     image = Image.new("RGB", (width, height))
 
     # Get drawing object to draw on image.
@@ -95,43 +130,26 @@ def main():
 
     try:
         service = build('calendar', 'v3', credentials=creds)
+        
+        ind = -1
+        
+        options = sync(3)
 
         # Call the Calendar API
         while True:
-            now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+            if not buttonA.value:
+                options = sync(3)
+                ind = -1
+            
 
-            events_result = service.events().list(calendarId='primary', timeMin=now,
-                                                  maxResults=1, singleEvents=True,
-                                                  orderBy='startTime').execute()
-            event = events_result.get('items', [])[0]
-
-            if not event:
-                print('No upcoming events found.')
-                return
-
-            # Prints the start and name of the next 10 events
-
-            start = event['start'].get('dateTime')
-            #print("time until next event in minutes")
-
-            dist = datetime.datetime.strptime(start[:-6], '%Y-%m-%dT%H:%M:%S')- datetime.datetime.now()
-            minute = dist.seconds//60
-            returnedTime = minute
-
-            if minute > max(runtimes):
-                returnedTime = max(runtimes)
-            else:
-                while returnedTime not in runtimes:
-                    returnedTime = returnedTime - 1
-            options = df.loc[df['Runtime'] == returnedTime]
-            ind = 0
-
-            if options.shape[0] == 1:
-                ind = 0
-            else:
-                ind = random.randrange(options.shape[1])
+            if not buttonB.value:
+                ind -=1
+                if ind < -3:
+                    ind = -1
+                sleep(.5)
             title = options["Title"].tolist()[ind]
             imageURL = options["Image"].tolist()[ind]
+            rt = options["Runtime"].tolist()[ind]
             print(title, imageURL)
 
             response = requests.get(imageURL)
@@ -148,19 +166,40 @@ def main():
             screen_ratio = width / height
             if screen_ratio < image_ratio:
                 scaled_width = image.width * height // image.height
-                scaled_height = height
+                scaled_height = height - 50
             else:
                 scaled_width = width
-                scaled_height = image.height * width // image.width
+                scaled_height = (image.height * width // image.width) - 50
             image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
 
             # Crop and center the image
             x = scaled_width // 2 - width // 2
             y = scaled_height // 2 - height // 2
             image = image.crop((x, y, x + width, y + height))
+            
+            x= 0
+            y = -2
+            time = str(rt) + " min"
+            txt = Image.new('RGB', (140,25))
+            d = ImageDraw.Draw(txt)
+            d.text((x,y), time, font = font, fill = "#FFFF00")
+            w = txt.rotate(0, expand = 1)
+            
+            image.paste(w)
+            
+            buttons = Image.new('RGB', (410, 25))
+            b = ImageDraw.Draw(buttons)
+            b.text((x,y), "Sync       Next", font = font, fill = "#FFFF00")
+            v = buttons.rotate(0, expand = 1)
+            
+            
+            image.paste(v, (0, 220))
+           
+           
+            
 
             disp.image(image)
-            sleep(2)
+            
 
 
 
@@ -174,7 +213,7 @@ def main():
 
     except HttpError as error:
         print('An error occurred: %s' % error)
-
+    
 
 if __name__ == '__main__':
 
