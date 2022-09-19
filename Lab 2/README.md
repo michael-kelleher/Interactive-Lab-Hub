@@ -213,12 +213,18 @@ I also showed the device to my friends Jessie Baldinger and Abby Doermann (non-C
 
 First I got feedback from Siddharth Wadhwa and Heusiu Kim. They liked the integration with Google Calendar and the display of the movie posters. One idea they seemed interested in was how it could be used to plan future events instead of only being used for what movie to watch right now. They said it could ping users with suggestions for later in the day (e.g. "You have 102 minutes of free time at 4:00, do you want to watch Singin' in the Rain?"). THe other big suggestion was to flesh out the interaction on the device itself. Currently it is pretty passive with most of the interaction happening on the computer/phone using Google calendar. THe suggested being able to scroll through possible movies, and to have an on/off button. Both are good ideas. Other thoughts included being able to share calendars with friends to synchronize opportunities for watch parties. 
 
-Pull Interactive Lab Hub updates to your repo.
+For this week, I focused on adding a user interface to the device itself so that all the interaction is not happening on the computer/Google Calendar. 
 
-Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
+First, I added a feature that pulled up the three longest movies that fit into a user's free time and they can cycle through them using one of the buttons. I chose three after trying it out on a few friends with different numbers of choices. This seemed like th sweet spot where they were able to remember all the options and still feel like they had a choice. It also prevented them from feeling like they were overwhelmed by the number of options.
 
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
+Second, I removed the constant syncing with Google Calendar in favor of a manual sync button. This improved the user experience because even though there is another step, you aren't constantly waiting for the time to tick down until you get the next option. You can go through the three choices and they don't change unless you want to refresh the time. 
 
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+I looked into adding a play button that would connect to streaming services, but it proved to not be possible with existing APIs. In the future, I think this feature would require a considerable amount of effort and exploration if it is feasible. 
 
+Finally I displayed the run time of the movies so users would have total information
+
+
+
+
+https://user-images.githubusercontent.com/90526300/191074111-eeaf552b-f34e-4c09-9e9f-dd104695cd86.mp4
 
