@@ -105,9 +105,18 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+![IMG_1193](https://user-images.githubusercontent.com/90526300/192305654-ef706492-c559-4088-aaa1-ecea251b1862.jpg)
 
 \*\***Please describe and document your process.**\*\*
+
+The goal of this device is to help actors memorize their lines (or anyone giving a presentation for that matter). First I though about the use case scenarios, and there really were two buckets: monologues and scenes. I started by working through the monologue UX as it is the simpler case. First, users would have to load in the script they were working from. Then once they start, the device listens along and keeps track of where they are in the script (with a high tolerance for errors with voice recognition). If the user says something very incorrect, the device will beep and read the first few words of the correct line. More commonly, if a user forgets their line and says "Line" the device will prompt them with the first few words of the next line. When it is complete, the system will read out some stats on how correct everything was. 
+
+For scenes, this basic structure persists, but it also has a few additional augmentations. First, the device will ask the user which role they are playing and take the input. Then it will now read out each of the other roles in the scene, with different pre-assigned voices. It will also have a feature that if the user say a line when it is not their turn, it will also beep and then continue on.
+
+See below for the flowchart
+
+
+![Flowchart](https://user-images.githubusercontent.com/90526300/192308190-8bf20aca-bcdc-4104-997e-46fe692ce9fd.jpg)
 
 ### Acting out the dialogue
 
