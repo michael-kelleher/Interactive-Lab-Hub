@@ -124,10 +124,17 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
+https://user-images.githubusercontent.com/90526300/192398859-319d0c1d-929a-4d55-b1de-b10dbbec409d.mp4
+
+I tried a Wizard of Oz version of the interaction with my sister who has a lot of experience memorizing and acting. It went largely as expected, with her using the familiar cue of calling line to get input on the next phrase to say. It seemed rather intuitive and effective as a tool. One thing that was worth exploring was premptively offering line suggestions if the user is waiting a long time or saying "umm" because they may just not have remembered to call line. This would require significant further testing to ensure that it wasn't picking up on too many false positivies and jumping in with the answer too quickly.
+
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
+
 
 # Lab 3 Part 2
 
