@@ -143,7 +143,13 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
+I realized in the user testing that the corrections for misspoken lines were jsut too confusing and cumbersome to be useful. SImilalry, the different voices for the scene were distracting. The best interaction would be to simplify the process to just rely on calling "line" and give the prompt. A friend(Sarang) pointed out that if the word line was in the script, this would be a clear point of misunderstanding. This means that I should also add a feature where the script is first scanned for the word "line" and if it appears, not to count that as a signal. 
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+
+Perhaps an easier method for the interaction would be to have a button press when they want the prompt, but that would limit mobility and/or require actors to carry something around when their hands could be otherwise busy. For this reason, I think voice commands are the best method. In order to further clarify this, some simple messaging the costuming to remind the users of the command would be helpful. Additionally, it could eb good to display the text of the prompt to build up visual memory as well.
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
 ## Prototype your system
@@ -155,26 +161,37 @@ The system should:
 
 *Document how the system works*
 
-*Include videos or screencaptures of both the system and the controller.*
+***Attempt 1***
+I tried to build a full solution that transcribed the text that it was hearing based on a full vocabulary. It would then compare that text to the target script to keep place. Then when prompted with "line," it would activate and read out the next 5 words. None of the systems we used in class were right for this becase I needed a more powerful transcription tool. I tried a few options such as these packages/tools:
+https://github.com/petewarden/spchcat
+https://linuxtut.com/en/1e044eb494623a3961a5/
+https://forums.raspberrypi.com/viewtopic.php?t=27290
+These worked to a variety of degrees but non provided me with the real time accruacy I needed in order to follow along with the target script. I think in the future, I would need to work with NLP models as well to get to a "close enough" level that would progress appropriately in order to make the tool actually useful. Without that, on missed word, an added um, a slight paraphrase, etc. render the tool useless.
+
+***Attempt 2***
+I further simplifed and went back to an expanded Wizard of Oz version of the tool. Now the device is just listening for the signal word: "Line." Upon hearing it, it triggers the human operator to type in the next five words and it then speaks that out loud. This provides a greater level of illusion that the tool is actually working than the version from Part 1 where the human operator did all parts. It also serves as proof of concept of the interaction technique in a realitvely robust way.
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
+I tried the device with a few of my actor friends with monolgues they were working on either for class or auditions. 
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+It worked really well for the narrow use case of forgetting a line mid-practice session. It was natural and easy to call line and get the next few words. However, there were moments when it was less useful than a human helper, because 5 words for the prompt is arbitrary. Sometimes it would be more beneficial to give a longer phrase or a shorter phrase, but that is hard to codify into programmable rules. It also is entirely unhelpful for multi-purpose scenes, which is a huge component of memorization. 
 
 ### What worked well about the controller and what didn't?
+The controller system worked quite well. It uses industry standard practices and felt natural to all participants. The key drawback here was the lack of ability to start at arbitrary points in a monologue or go back. Memorization is not always linear, so it is essential to be able to go back a couple lines and try again or not have to start from the beginning every time. 
 
-\*\**your answer here*\*\*
+
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
+1. The system really does need to support providing prompts of varying length depending on context. This will be difficult to program, but it is worth the consideration.
+2. The system needs to be able to ignore filler words, track position in the speech less precisely, and deal with moderate paraphrasing. ALternatively, it needs to allow settings for level of prceision. If the actor is just trying to get the ideas, it should not require word perfect, but if they are trying to nail Shakespeare it is more reasonable. Regardless, the system needs to be able to figure out where an actor is in a monologue without limitations from poor speech to text tracking.
+3. It needs to be a bit less of a black box. Users should be able to see what's happening (e.g. where the device thinks we are in the monologue) so they can see what's going wrong if necessary
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+This could be used to develop a dataset of commonly forgotten lines for acting teachers to help support with new memorization techniques and training. It could also be used to track usage of filler words, variations in speed (speaking too fast/slow), and otehr performance metrics to improve an actor's work. 
 
