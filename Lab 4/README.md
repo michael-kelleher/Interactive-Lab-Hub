@@ -256,7 +256,7 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
-![IMG_1233](https://user-images.githubusercontent.com/90526300/195448714-5c2c02f1-7458-4f02-8deb-2836a7481868.jpeg)
+![IMG_1228](https://user-images.githubusercontent.com/90526300/195448810-49685113-6ad2-4977-828d-60a22a6f64cd.jpeg)
 
 There are three versions of a standalone device with different configuarations of the sensor and the display. There are also three versions that are integrated into the kitchen environment. One is wall mounted on the backsplash. The second is built into the front of the counter. The final is built into the surface of a counter.
 
