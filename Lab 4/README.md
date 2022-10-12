@@ -191,14 +191,26 @@ It can be hard to tell how close you are to a curb while parallel parking. This 
 
 1. Automatc Blinds
 There need to be clear interactions to customize the threshholds for opening and closing as well as to turn the system on and off, perhaps on a daily schedule. This is not easy to accomplish with a physical user interface, and leans more heavily into an IOT framework operated by an app. That will need to be prototyped to understand what users would want to be able to do and waht feels intutive. Aesthetics will also be important to assess, as people may not want a bulky device on their walls. We will need to prototype sleek form factors to solve this. 
+![IMG_1231](https://user-images.githubusercontent.com/90526300/195448446-7302f375-b1a9-471b-8875-56ce19fdcb9c.jpeg)
+
 2. Steering wheel safety
 This begs the question of what happens when a person is wearing gloves. do we want to be able to turn it on and off, or would that be abused? What are the threshholds for how long a driver should be able to have their hands off the wheel before an alert? Should it be triggered if just one hand is off the wheel? These questions are all safety related and need to be answered by experimenting with prototypes. Physically, we need to determine the proper placement for the capacitive sensors to ensure comfort and safety.
+![IMG_1230](https://user-images.githubusercontent.com/90526300/195448536-0c87f45a-f486-4548-8f32-a0c6c5f91399.jpeg)
+
+
 3. Garbage Can Overflow
 THe big question is is there enough light inside a trashcan for the sensor to work, or do we need to add illumination and/or use an IR based sensor. That can be tested quickly with prototyping various designs. We also need to explore best notification systems. Do we want a small light on the front of the trashcan? An integration with a smartphone ping? Maybe a bigger screen on the trashcan? That neds to be explored with users
+![IMG_1233](https://user-images.githubusercontent.com/90526300/195448570-8a02f1bb-88b8-4626-81e4-b81127b8f015.jpeg)
+
+
 4. Hands free timer
 It is not yet clear whether a wall mounted device or something that sits on the coutner and can be moved around is more ergonomic and provides more utility for users. It would be beneficial to try both options and get feedback on the prototypes. We also shoudl evaluate ways of dispalying the gesture information which are not obvious without some instructions.
+![IMG_1232](https://user-images.githubusercontent.com/90526300/195448632-9b715f6f-2a10-4a53-81a3-ce771c0b7cf1.jpeg)
+
+
 5. Park Assist
 The placement of the sensor is key here, because it will likely have to be on an angle in order to actually see where the curb is. We will also need to explroe various housings for the sensor becuase the outside of a car is not a controleld environment and we need the sensor to reamin in place. This will need to be explored and stress tested. 
+![IMG_1229](https://user-images.githubusercontent.com/90526300/195448671-06b3e9d5-2288-48c9-bf17-9571641206b2.jpeg)
 
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
@@ -243,6 +255,8 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+
+![IMG_1233](https://user-images.githubusercontent.com/90526300/195448714-5c2c02f1-7458-4f02-8deb-2836a7481868.jpeg)
 
 There are three versions of a standalone device with different configuarations of the sensor and the display. There are also three versions that are integrated into the kitchen environment. One is wall mounted on the backsplash. The second is built into the front of the counter. The final is built into the surface of a counter.
 
