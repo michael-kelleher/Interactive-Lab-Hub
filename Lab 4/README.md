@@ -285,6 +285,19 @@ While it is important that the device can be seen, kitchens are a releatively sm
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+*Process*
+First I cut a plan of the triangle box measured to have space inside for the raspberry  pi
+![IMG_1241](https://user-images.githubusercontent.com/90526300/195467512-76476c3d-b70e-457e-9583-046b92178606.jpeg)
+Next I folded it into place along the scores
+![IMG_1243](https://user-images.githubusercontent.com/90526300/195467515-a26577c9-31d1-445a-a5d6-6ed9bd0d9527.jpeg)
+I then cut hole for the display and sensor and drew the instructions
+![IMG_1244](https://user-images.githubusercontent.com/90526300/195467517-35ae5d43-f057-4d13-af52-effd8e47a7cb.jpeg)
+I then mounted the display and sensor inside
+![IMG_1245](https://user-images.githubusercontent.com/90526300/195467520-1cc0c8dd-aec1-436e-9639-ab520595cb16.jpeg)
+Rough prototype
+![IMG_1246](https://user-images.githubusercontent.com/90526300/195467521-e7d2deda-68ad-4419-805e-21e84370265d.jpeg)
+Inside of rough prototype
+![IMG_1247](https://user-images.githubusercontent.com/90526300/195467522-4b6c1d15-d2d8-41e9-8797-022cd26b2d5f.jpeg)
 
 
 LAB PART 2
