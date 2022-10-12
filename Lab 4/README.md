@@ -176,7 +176,26 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+1. Automatc Blinds
+This device automates the process of raising and lower blinds to adjust to the level of exterior light. It utilizes a light sensor to measure the incoming sunlight and than controls a servo to operate the blinds with that information.
+2. Steering Wheel Safety
+This device utilizes capacacative senors integrated into the steering wheel of a car in order to ensure that the driver's hands stay on the wheel. If they detect that the drvier is not holding the wheel, it will start beeping to alert them of the safety hazard. 
+3. Garbage Can Overflow
+It can be hard to remember to take out the trash because we forget when it is full. This devices places a proximity sensor on the inside of the trash can lid to measure how far from the to the trash line is. Then it puts a signifier on the front of the trash bin to let people know its time to empty the trash.
+4. Hands free timer
+When cooking, our hands are often dirty, so we can't operate a timer without washing our hands. Voice commands work, but not all of us want tohave something listening to us. This uses gesture controls to operate a wall mounted timer.
+5. Park Assist
+It can be hard to tell how close you are to a curb while parallel parking. This utilizes a proximity sensor to measure the distance and give visual feedback on the driver's dashboard.
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+1. Automatc Blinds
+
+2. Steering Wheel Safety
+3. Garbage Can Overflow
+4. Hands free timer
+5. Park Assist
+
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
