@@ -244,11 +244,29 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+There are three versions of a standalone device with different configuarations of the sensor and the display. There are also three versions that are integrated into the kitchen environment. One is wall mounted on the backsplash. The second is built into the front of the counter. The final is built into the surface of a counter.
+
+There are no buttons or knobs being used because the purpose of the device is to be hands free when a cook is busy with dirty hands. 
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+The three integrated versions call into question ergonomics. Is it easy to reach to the wall or is that difficult with the counter in the way? Is having it built into the front of the counter in too busy of an area that will get a lot of false signal? Is having it on top of the counter too likely to be covered by the work being done. THese questions will all need to be explored with real users in order to see how the physical design functions
+
+THe standalone device is exploring  the most ergonomic arrangement of the sensor and display. It will be interesting to see how users place the device and use it. 
+
+Between them all, the question is whether portability or consistent placement is more important to users. 
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
-**\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+Portable device 1
+
+**\*\*\*Explain the rationale for the design.\*\*\*** 
+
+I'm most interested in the portable devices becuase people are often working in different parts of the kitchen and it could be useful to bring it with them. Also, I think the integrated designs are just a bigger commitment for users than something they can put away. 
+
+The linear design of the sensor and display is the msot intutive as it does not require users to think about two sides of the device. To save space, I'm using the triangle design. 
+
+While it is important that the device can be seen, kitchens are a releatively small space, and the user is most likely to be working nearby. Furthermore, kitchen real estate typically is at a premium. Thus, prioritizing a small form factor is important.
 
 Build a cardbord prototype of your design.
 
