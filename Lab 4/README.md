@@ -190,11 +190,15 @@ It can be hard to tell how close you are to a curb while parallel parking. This 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 1. Automatc Blinds
-
-2. Steering Wheel Safety
+There need to be clear interactions to customize the threshholds for opening and closing as well as to turn the system on and off, perhaps on a daily schedule. This is not easy to accomplish with a physical user interface, and leans more heavily into an IOT framework operated by an app. That will need to be prototyped to understand what users would want to be able to do and waht feels intutive. Aesthetics will also be important to assess, as people may not want a bulky device on their walls. We will need to prototype sleek form factors to solve this. 
+2. Steering wheel safety
+This begs the question of what happens when a person is wearing gloves. do we want to be able to turn it on and off, or would that be abused? What are the threshholds for how long a driver should be able to have their hands off the wheel before an alert? Should it be triggered if just one hand is off the wheel? These questions are all safety related and need to be answered by experimenting with prototypes. Physically, we need to determine the proper placement for the capacitive sensors to ensure comfort and safety.
 3. Garbage Can Overflow
+THe big question is is there enough light inside a trashcan for the sensor to work, or do we need to add illumination and/or use an IR based sensor. That can be tested quickly with prototyping various designs. We also need to explore best notification systems. Do we want a small light on the front of the trashcan? An integration with a smartphone ping? Maybe a bigger screen on the trashcan? That neds to be explored with users
 4. Hands free timer
+It is not yet clear whether a wall mounted device or something that sits on the coutner and can be moved around is more ergonomic and provides more utility for users. It would be beneficial to try both options and get feedback on the prototypes. We also shoudl evaluate ways of dispalying the gesture information which are not obvious without some instructions.
 5. Park Assist
+The placement of the sensor is key here, because it will likely have to be on an angle in order to actually see where the curb is. We will also need to explroe various housings for the sensor becuase the outside of a car is not a controleld environment and we need the sensor to reamin in place. This will need to be explored and stress tested. 
 
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
