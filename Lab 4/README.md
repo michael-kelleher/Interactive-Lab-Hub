@@ -352,6 +352,7 @@ https://user-images.githubusercontent.com/90526300/196258716-85b03887-9406-4d09-
 2. When it was closer to the front of the counter, it was recognizing a lot of false positives as you move around the kitchen.
 3. Incrementing the time by 1 minute was very tedious, especially when trying to go from the default of 10 to something like 40 minutes. Given that this is more likely to be used for longer cooks than for short bursts (baking or raw meat is more likely to lead to dirty hands), the minute precision is less helpful than general long increments
 4. There was no way to cancel the timer in the case of an error. This should be added. 
+5. The sensor was not working well when behind the cardboard, likely because of light angles. I took the sensor out to the front of the housing. In future versions, a thinner material would likely be helpful
 
 New Designs
 I created three new physical form factor sketches. Two with more upright designs that solve the first two issues, allowing the device to be placed further back while leaving room for the hand. The triangle version is superior due to taking up less space and requiring less material, but it may not fit the pi on the inside without being too bulky. The third version hangs from overhead cabinets, but I chose not to use this one because it was less versatile for kitchens that may not have overhead cabinetry and requires it to be placed in a stationary position.
