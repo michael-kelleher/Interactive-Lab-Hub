@@ -361,6 +361,31 @@ I then did 6 new sketched of the face design, focusing on clarity in instruction
 ![IMG_1267](https://user-images.githubusercontent.com/90526300/196258881-ffc4e369-e046-46d4-9d58-519d90feb24b.jpg)
 
 
+**Version 2**
+
+I implemented many of those changes for the next iteration
+
+First I made a plan of the cardboard housing for the prototype
+![IMG_1268](https://user-images.githubusercontent.com/90526300/196266061-5b2c75b4-63dd-4807-b72f-4404ce9612b9.jpeg)
+Then I made cutouts for the sensor, display, and cables
+![IMG_1269](https://user-images.githubusercontent.com/90526300/196266066-9c9109be-811a-441f-9ab2-8c356087a396.jpeg)
+Then, I attached the hardware and formed the housing into shape
+![IMG_1270](https://user-images.githubusercontent.com/90526300/196266068-9e00638f-8f6c-4f45-87fa-9ac21c6c7d2d.jpeg)
+Finally I added a faceplate to communicate instrutions
+![IMG_1271](https://user-images.githubusercontent.com/90526300/196266070-caef0de6-39b7-4a45-b326-7c63f22e3660.jpeg)
+
+I tested it with a few friends and found this to be far more effective. There were still concerns around the reliablility of the gesture sensor, but it worked well enough. 
+
+
+
+https://user-images.githubusercontent.com/90526300/196266506-565f525f-ce8c-44c9-907f-ecd81c720204.mp4
+
+
+**Next steps**
+
+I think the device is still rather bulky, so I would explore a few more form factors that maintain the space for gestures without taking up so much space. 
+I also would focus on sensor reliability, and see if there are techniques for making the input more consistent. 
+
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
