@@ -338,6 +338,29 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Part F
 ### Record
 
+*Development*
+Upon testing the first prototype while cooking with a few friends, there were a few important areas for future development:
+
+https://user-images.githubusercontent.com/90526300/196258739-56d6124d-c851-422a-acf9-cb77d149cbf9.mp4
+
+
+1. The gesture sensor was hard to ergonomically trigger when the device was far back on the counter because there was not space for the hand
+
+https://user-images.githubusercontent.com/90526300/196258716-85b03887-9406-4d09-bfa4-541cda56c7f6.mp4
+
+
+2. When it was closer to the front of the counter, it was recognizing a lot of false positives as you move around the kitchen.
+3. Incrementing the time by 1 minute was very tedious, especially when trying to go from the default of 10 to something like 40 minutes. Given that this is more likely to be used for longer cooks than for short bursts (baking or raw meat is more likely to lead to dirty hands), the minute precision is less helpful than general long increments
+4. There was no way to cancel the timer in the case of an error. This should be added. 
+
+New Designs
+I created three new physical form factor sketches. Two with more upright designs that solve the first two issues, allowing the device to be placed further back while leaving room for the hand. The triangle version is superior due to taking up less space and requiring less material, but it may not fit the pi on the inside without being too bulky. The third version hangs from overhead cabinets, but I chose not to use this one because it was less versatile for kitchens that may not have overhead cabinetry and requires it to be placed in a stationary position.
+
+I then did 6 new sketched of the face design, focusing on clarity in instructions. After some ideation, I found a pretty straightforward option that should be intuitive for users. I will prototype that version to be sure. 
+![IMG_1267](https://user-images.githubusercontent.com/90526300/196258881-ffc4e369-e046-46d4-9d58-519d90feb24b.jpg)
+
+
+
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
 * "Works like": shows what the device can do
