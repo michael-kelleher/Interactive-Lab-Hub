@@ -266,6 +266,10 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+I'll be using the object detection algorithm to create a system that notifies custodial staff when a given area has been littered so that the appropriate staff can be deployed to the area to clean up. There will be a mounted camera pointed at the area of interest, and when a given number of objects are detected, it will send an image to the manager indicating that someone may need to be deployed. 
+
+See below images for design experimentation and contextual interaction design tool.
+
 ### Part C
 ### Test the interaction prototype
 
@@ -276,11 +280,21 @@ For example:
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
 
+This really works best in low traffic areas because with too much movement, there is far more noise than signal for the system to work with. In such an environment, like a store display, and art installation, or a quiet sidewalk, it will work quite well. It also is more suited for indoor use, with consistent lighting conditions and a lack of wind moving objects around.
+
+The converse leads to a failure case. Trying to use this in Times Square would be entirely useless with socres of people moving about, and many forces moving the objects around as well.  Aditionally, it will fail entirely in the dark, as the camera will not pick up an image.  
+
+Another issue is the detection algorithm itself, which is not perfect. Very small items, items that blend into the background, or even items that are very large compared to the total window size are unlikely to be picked up. 
+
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+This is meant to be a tool to dispatch cleaning services when litter is detected, not a replacement for consistent maintenance. Thus, it is expected for it not to be 100% accurate. False negatives are bound to happen, but they are not too consequential, as they will be cleaned up during regular cycles. False positives are okay, as long as there are not too many becuase an image is sent with the notification. A maanger would easily be able to see that there is no need to send someone out.
+
+To account for people moving through the space, it will only count objects that remain stationary in frame for greater than 5 minutes (or a user specified duration). To increase usability, managers will also be able to reset the threshold for each area of interest. This will reduce false positives from obejcts that are meant to be in the space.
 
 ### Part D
 ### Characterize your own Observant system
