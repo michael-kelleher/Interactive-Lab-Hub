@@ -269,6 +269,12 @@ This might take a while to get fully installed. After installation, connect your
 I'll be using the object detection algorithm to create a system that notifies custodial staff when a given area has been littered so that the appropriate staff can be deployed to the area to clean up. There will be a mounted camera pointed at the area of interest, and when a given number of objects are detected, it will send an image to the manager indicating that someone may need to be deployed. 
 
 See below images for design experimentation and contextual interaction design tool.
+![IMG_1292](https://user-images.githubusercontent.com/90526300/197587231-0fbe36a8-9850-4695-acec-89651bb58e14.jpeg)
+![IMG_1293 2](https://user-images.githubusercontent.com/90526300/197587232-eeb74aa9-bf7c-4213-a5f6-2cd944b8094f.jpeg)
+![IMG_1294 2](https://user-images.githubusercontent.com/90526300/197587234-846c94a7-b234-450d-87bb-37ba250285ab.jpeg)
+![IMG_1295 2](https://user-images.githubusercontent.com/90526300/197587236-6dcebea6-5756-4c39-8886-7b9ec3cbac70.jpeg)
+
+
 
 ### Part C
 ### Test the interaction prototype
