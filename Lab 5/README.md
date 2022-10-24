@@ -171,6 +171,12 @@ For technical references:
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
 
+I took option one and set up threshold detection (currently set at 1000)
+Code: https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%205/threshAudio.py
+Video: https://user-images.githubusercontent.com/90526300/197569951-4faa16d9-9b18-4ebf-9e59-c71b2a8be0a4.mp4
+
+
+
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pis, so you can move onto part B.** However, you are welcome to try it on your personal computer. 
 
