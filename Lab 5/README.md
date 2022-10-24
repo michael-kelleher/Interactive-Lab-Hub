@@ -102,6 +102,37 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+**CONTOURS**
+https://user-images.githubusercontent.com/90526300/197561399-ee620b6d-1e31-4a8c-b5a5-6f01b7a97069.mp4
+https://user-images.githubusercontent.com/90526300/197561418-ef32162f-e345-4f7a-92a5-6aaccfe1cb74.mp4
+
+Contours worked well at identifying large scale edges in rooms, even working through windows moderately well. It is important to note that it picked up many false positives when pointed at flat surfaces, likely due to light. 
+
+Use case: Utilize contours to identify flat regions in a scene and use those to visualize new textures and materials placed on them. For example, this could be used to visualize new paint colors, or create artistic experiences that transform a room.
+
+
+**FACE DETECTION**
+https://user-images.githubusercontent.com/90526300/197564227-94610824-47f8-4bc0-b8c4-84ba3e117ab8.mp4
+
+Face detection worked quite well, even at picking up multiple people in one frame. It also picked up facial features like eyes at times. 
+
+Use case: Anonymize video streams. Utilize facial detection to pick up on regions to blur on video streams for privacy and security purposes. 
+
+
+**FLOW DETECTION**
+https://user-images.githubusercontent.com/90526300/197562439-37dea5ac-7e8e-4f70-9fbd-d7db2952cc22.mp4
+
+Flow detection worked quite poorly. It picked up some movement when the camera moved, but really struggled to identify moving objects' flow in the scene. It also frequently crashed, making it a less useful tool in this format. 
+
+Use case: Rudimentary mocap system for small scale entertainment activations. You could essentially make a human-scale computer mouse that takes the motion of the human hand to activate a movement on a large format screen/projection. 
+
+**OBJECT DETECTION**
+https://user-images.githubusercontent.com/90526300/197561956-0e0a789f-c0e3-4a4e-a2b4-7163a6494a80.mp4
+
+Object Detection picked up most, but not all objects placed in a scene. 
+
+Use case: Litter detection system. Point a camera at an area you want to keep clean. When an object is detected (and persists so as to prevent the false positive of people moving through a space), it notifies staff to clean up the space.
+
 #### Filtering, FFTs, and Time Series data. 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
 
