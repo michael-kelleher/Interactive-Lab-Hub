@@ -1,6 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
+**Independent Work**
 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
@@ -316,6 +316,12 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+These questions are all adressed in earlier sections. Below is a video of the interaction.
+
+https://user-images.githubusercontent.com/90526300/197625268-8521fe6f-52b2-49d8-873f-1978c18720b9.mp4
+
+
 
 ### Part 2.
 
