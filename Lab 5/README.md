@@ -357,4 +357,9 @@ Updated Video with working notification sytem:
 https://user-images.githubusercontent.com/90526300/199032439-261ecea6-c4af-49b8-b415-3ce5fc8f4804.mp4
 
 
+***Testing***
+After completing the project, I tested the prototype with a few friends. It was working pretty consistently well with large objects, but failed in the case of smaller objects, or when they blended into the background.
 
+Most feedback was largely positive, and people said that they could see how this would be useful at a larger scale when you are trying to monitor a large variety of areas with limited staff. Other feedback is as follows:
+- It needs to be easier to change the threshold so that it can dynamically change over time
+- The reset mechanism needs to be more clear so that we know when it will start reading again. Currently it is set to not ping again for another 10 minutes, but that is not clear
