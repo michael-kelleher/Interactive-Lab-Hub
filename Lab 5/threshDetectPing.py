@@ -5,6 +5,7 @@
 import numpy as np
 import cv2
 import sys
+import time
 
 from pushsafer import Client
 import base64
@@ -12,6 +13,7 @@ import base64
 tensorflowNet = cv2.dnn.readNetFromTensorflow('frozen_inference_graph.pb', 'ssd_mobilenet_v2_coco_2018_03_29.pbtxt')
 
 thresh = 3
+intervalTime = 60*10
 
 img = None
 webCam = False
@@ -66,7 +68,7 @@ while(True):
         encoded = 'data:image/png;base64,{}'.format(encoded)
         client = Client("0zStwJjFb4kOA08KxMe1")
         resp = client.send_message("Mess Detected", "It may be time for some cleaning", "58896", "136", "48", "2", "", "", "0", "2", "60", "600", "1", encoded, "")
-
+        time.sleep(intervalTime)
     if webCam:
         if sys.argv[-1] == "noWindow":
            print("Finished a frame")
