@@ -338,8 +338,13 @@ I then worked on adding images to the notification. I learned about how to encod
 ![IMG_1338](https://user-images.githubusercontent.com/90526300/199018466-c03b978f-6456-47c5-be10-78ec669214cb.PNG)
 
 Next was pulling the image from the camera itself.
-![Picture1](https://user-images.githubusercontent.com/90526300/199025783-5aed78e2-0ffe-4610-ade9-7dcb273b70a1.png)
+![Picture1](https://user-images.githubusercontent.com/90526300/199028766-413657a0-95e2-4afd-a439-35a63b3beb5b.png)
+
 
 Then, I used the detect.py script and combined it with the pinging script to send the message when the threshold is crossed:
 
+Image of Notification:
+![Picture1](https://user-images.githubusercontent.com/90526300/199025783-5aed78e2-0ffe-4610-ade9-7dcb273b70a1.png)
+
+Video:
 
