@@ -328,3 +328,18 @@ https://user-images.githubusercontent.com/90526300/197625268-8521fe6f-52b2-49d8-
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+This week was all about building the device as developed in part 1, so the earlier sketches and videos still apply. 
+
+First I worked on getting the notification system build to send messages to my phone. I used an application called "PushSafer" (https://www.pushsafer.com/) to get the basic system set up. This was a good solution because they provide a simple API to send pings directly from python scripts. 
+
+I then worked on adding images to the notification. I learned about how to encode an image as Base64 encoded DataURL using the base64 library in Python. I started by just using the files already stored on the pi to send this notification.
+
+![IMG_1338](https://user-images.githubusercontent.com/90526300/199018466-c03b978f-6456-47c5-be10-78ec669214cb.PNG)
+
+Next was pulling the image from the camera itself.
+![Picture1](https://user-images.githubusercontent.com/90526300/199025783-5aed78e2-0ffe-4610-ade9-7dcb273b70a1.png)
+
+Then, I used the detect.py script and combined it with the pinging script to send the message when the threshold is crossed:
+
+
