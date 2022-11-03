@@ -96,6 +96,12 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1. ETAs for tram arrival times. When the Roosevelt Island tram departs, the operator will send a message to the channel. That can then be received by the opposite station to let them know when the tram will arrive. 
+2. Snow Day Alert/Emergencency Notification system. The adminastrator can send a message to to the topic and it will be distributed to the subscribers of the topic, which would include parents and teachers.
+3. Communinty Crowd Sourcing 
+4. Resource Matching. Catering Events 
+5. A weird way to text your friends without a phone. Parents no phones.  
+
 ### Part C
 ### Streaming a Sensor
 
