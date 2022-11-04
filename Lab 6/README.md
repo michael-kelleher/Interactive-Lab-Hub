@@ -164,6 +164,14 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+Some ideas we exlored:
+- High Noise Level Detection sending a ping to property owners to indicate a noise complaint may incoming that they don't want to deal with. And/or automating the noise complaint system in apartment buildings
+- Security system. Using capactive touch sensors, send a message to the network when an object that shoudln't be touched is touched so security can be alerted. 
+- Crowd sourced poetry and/or storytelling platform. 
+- Busy Light so that people in distinct locations can just press a button and notify friends/family that they are busy without having to send a text message.
+- Distributed gardening systemt hat senses the humidity in the soil, measures the temperature, and utilizes a video camera to detect insects to collect data on a garden's status. That gets collected and shared to gardeners device
+- Stick on speakers that provide wayfinding reminders to older adualts/ people with cognitive disabilities.
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
