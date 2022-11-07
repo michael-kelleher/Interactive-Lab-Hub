@@ -172,6 +172,22 @@ Some ideas we exlored:
 - Distributed gardening systemt hat senses the humidity in the soil, measures the temperature, and utilizes a video camera to detect insects to collect data on a garden's status. That gets collected and shared to gardeners device
 - Stick on speakers that provide wayfinding reminders to older adualts/ people with cognitive disabilities.
 
+Scenario sketches for the ideas explored above:
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_1.jpg"  width=70% height=70% >
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_2.jpg"  width=70% height=70% >
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_3.jpg"  width=70% height=70% >
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_4.jpg"  width=70% height=70% >
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_5.jpg"  width=70% height=70% >
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_6.jpg"  width=70% height=70% >
+
+
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
