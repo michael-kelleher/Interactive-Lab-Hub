@@ -205,7 +205,19 @@ Scenario sketches for the ideas explored above:
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+Each node in the system can play two roles - sensing or observing. Each of the sensing nodes send a messgae when a certain criteria is met, such as capacitive touch on an object that could be stolen, or a noise threshold is crossed in an after-hours environment that shoudl be quiet. 
+
+Those messages are read by anyone subscribed as an observing node. It also triggers a ping to a cell phone to notify interested parties of the security breach. 
+
+Scripts:
+https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/SendAlert.py
+https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/DistPing.py
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+
+
+https://user-images.githubusercontent.com/90526300/200396272-2d6a860d-561e-4346-ae70-e4354c99d4ff.mp4
+
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
