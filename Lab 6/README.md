@@ -96,10 +96,10 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
 1. ETAs for tram arrival times. When the Roosevelt Island tram departs, the operator will send a message to the channel. That can then be received by the opposite station to let them know when the tram will arrive. 
-2. Snow Day Alert/Emergencency Notification system. The adminastrator can send a message to to the topic and it will be distributed to the subscribers of the topic, which would include parents and teachers.
-3. Communinty Crowd Sourcing 
-4. Resource Matching. Catering Events 
-5. A weird way to text your friends without a phone. Parents no phones.  
+2. Snow Day Alert/Emergencency Notification system. The administrator can send a message to to the topic and it will be distributed to the subscribers of the topic, which would include parents and teachers.
+3. Communinty Crowd Sourcing. When there are major events in a community, people can use the device to send distributed messages to all subscribed memebers
+4. Resource Matching. Catering Events could send out messages to lists when there are available leftovers to reduce food waste. 
+5. A weird way to text your friends without a phone. Parents could also get dedicated devices for their kids without phones to limit screen time, but still communicate.  
 
 ### Part C
 ### Streaming a Sensor
@@ -121,8 +121,15 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
  ```
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+Picture of the set up:
+![IMG_1346](https://user-images.githubusercontent.com/90526300/200392488-8640d93b-3078-40cd-b75c-ed1706c85ff0.jpg)
+
+Results from MQTT Explorer:
+https://user-images.githubusercontent.com/90526300/200392615-ee673424-6682-4769-8a86-1f1a69e0453e.mp4
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
+We used the button to stream data with MQTT:
+https://user-images.githubusercontent.com/90526300/200392817-cc0a5239-350e-41d5-a38d-0ac34ec22dd6.mp4
 
 
 ### Part D
@@ -157,6 +164,10 @@ Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
 
 
+https://user-images.githubusercontent.com/90526300/200392900-e3d2b64e-d0fc-4572-8f1b-95d2c5277b5c.mp4
+
+
+
 ### Part E
 ### Make it your own
 
@@ -169,7 +180,7 @@ Some ideas we exlored:
 - Security system. Using capactive touch sensors, send a message to the network when an object that shoudln't be touched is touched so security can be alerted. 
 - Crowd sourced poetry and/or storytelling platform. 
 - Busy Light so that people in distinct locations can just press a button and notify friends/family that they are busy without having to send a text message.
-- Distributed gardening systemt hat senses the humidity in the soil, measures the temperature, and utilizes a video camera to detect insects to collect data on a garden's status. That gets collected and shared to gardeners device
+- Distributed gardening system that senses the humidity in the soil, measures the temperature, and utilizes a video camera to detect insects to collect data on a garden's status. That gets collected and shared to gardeners device
 - Stick on speakers that provide wayfinding reminders to older adualts/ people with cognitive disabilities.
 
 Scenario sketches for the ideas explored above:
