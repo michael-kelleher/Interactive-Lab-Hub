@@ -198,6 +198,18 @@ Scenario sketches for the ideas explored above:
 <img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/ideation_6.jpg"  width=70% height=70% >
 
 
+__Final idea: securtiy system:__
+- where would it be used: 
+  - Individual: private homes, apartments, special storage rooms
+  - Public: installation art in public spaces/parks, schools, budget museums and short-term exhibitions
+- why would people want it (compared to alternatives): basic functionality and might be prone to some errors, but easy installation and low budget that makes security systems more customizable and budget friendly
+- Some error considerations: 1) alarm is not connected to immediate action of securing whatever is being threatened --it might be too late by the time someone acts on the alarm that is triggered 2) touch sensors might not be installed to cover all vulnerable surfaces, 3) sound sensor threshold might be too low /senstiive or not discern between sound made by personnel that is allowed to follow through
+- Added considerations: easy control over turning the system on/off would help with concern #3
+
+<img src="https://github.com/michael-kelleher/Interactive-Lab-Hub/blob/Fall2022/Lab%206/verplank_diagram.jpg"  width=70% height=70% >
+
+
+
 
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
