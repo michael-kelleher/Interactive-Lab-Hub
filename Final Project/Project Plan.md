@@ -45,4 +45,6 @@ This should be quite doable as the level of intricacy can scale up or down as ne
 
 ## Slide:
 https://docs.google.com/presentation/d/1hm5qZgO5peY160hxqXT3vT9SX_UeGqXt3hAvkOS1-1A/edit#slide=id.p
+![Picture1](https://user-images.githubusercontent.com/90526300/201825051-643fe7b4-9599-4c02-abbc-4d5317f66673.png)
+
 
