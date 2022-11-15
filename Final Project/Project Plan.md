@@ -29,20 +29,20 @@ December 1-5: Make finished physical design.
 December 6: Final Presentation
 December 7-10: Finalize documentation and submit
 
-Parts Needed:
+## Parts Needed:
 1. Raspberry Pi (Already have)
 2. Monitor (Already have)
 3. 2 Way mirror or reflective film
 4. IR Frame
 
-Risks/Contingencies
+## Risks/Contingencies
 1. The IR Frame may not function as well as I am hoping or may have difficulty working with the raspberry pi. In this case, this can be abandoned and the display will be static. Interaction can occur through other methods
 2. The IR frame may not be available in time. In this case, the above holds true
 3. The humid environment of a bathroom may not be suitable for this equipment. In production this would be put in watertight casing, but for now, it will jsut not be tested in this environment. This should make no difference in usability. 
 
-Fall-Back Plan
+## Fall-Back Plan
 This should be quite doable as the level of intricacy can scale up or down as needed. In the worst case, a simple behind-the mirror display can pull from a external device's reminder inputs. In the best case, there can be customizable touch enabled widgets on screen, voice commands, and more. 
 
-Slide:
+## Slide:
 https://docs.google.com/presentation/d/1hm5qZgO5peY160hxqXT3vT9SX_UeGqXt3hAvkOS1-1A/edit#slide=id.p
 
