@@ -5,8 +5,11 @@ Life is busy, and the to-do lists pile up. Sometimes, it can be difficult to kee
 
 ## Exploration of Design Space
 See below for some ideation of potential solutions
+![IMG_1388](https://user-images.githubusercontent.com/90526300/201822599-1a7d6858-b7a1-4c86-938e-e765d3cf7e65.jpeg)
+![IMG_1389](https://user-images.githubusercontent.com/90526300/201822602-bd4c8fa5-cceb-464a-9895-3a9eabb02208.jpeg)
 
-
+![GF-Review-March-2020-21](https://user-images.githubusercontent.com/90526300/201822438-2d20b3fa-d4de-49a1-9208-4105bd10ba5d.jpg)
+Inspiration drawn from this behind-the-mirror TV at Disney's Grand Floridian Hotel and Spa (Photo from https://worldofwalt.com/review-villa-grand-floridian-march-2020.html)
 
 ## Big Idea
 Every day begins and ends in the same place, brushing your teeth in front of the bathroom mirror. This is the perfect time to reinforce important to-dos and reminders. After all, you have 2 minutes just staring at yourself! 
@@ -41,3 +44,5 @@ Fall-Back Plan
 This should be quite doable as the level of intricacy can scale up or down as needed. In the worst case, a simple behind-the mirror display can pull from a external device's reminder inputs. In the best case, there can be customizable touch enabled widgets on screen, voice commands, and more. 
 
 Slide:
+https://docs.google.com/presentation/d/1hm5qZgO5peY160hxqXT3vT9SX_UeGqXt3hAvkOS1-1A/edit#slide=id.p
+
