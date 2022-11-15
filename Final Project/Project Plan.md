@@ -1,4 +1,5 @@
 # Final Project Plan - I keep forgetting things!
+Michael Kelleher
 
 ## Problem Statement
 Life is busy, and the to-do lists pile up. Sometimes, it can be difficult to keep track of all the little things we are supposed to do. Building new habits, routines, and practices can just be hard to remember. Of course there are no shortage of solutions to this problem, but they all fall short. Phone apps are helpful, but they just add to our already too high screentime, lead to distraction, and can be cleared and reforgotten too easily. Writing everything down by hand can be tedious, too public, and far too easy to lose. 
