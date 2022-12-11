@@ -61,16 +61,66 @@ In the ideal world, this would be mounted on a wall behind a bathroom mirror. As
 **The Display and Mirror**
 The display part was easy. I used a 27" computer monitor that I already had to show the content. THe harder part was finding the right mirroring.  The most obvious choice was to buy a 1-way mirror, which is reflective from one side and transparent from the other. There were two issues here, the first was finding one of the appropriate dimensions, and the second was attaching it. I did not want to build a wood or metal frame to hold everything together sturdily, nor did I want to permanently attach it to my monitor. Similarly, even if I found or cut the correct dimensions, if I changed my mind on the display, I would have to start over again on the mirror. 
 
+The display
+![IMG_1551](https://user-images.githubusercontent.com/90526300/206881952-c3e9595a-52ed-4785-b473-3e7f9fead6b1.jpeg)
+
+
+
 Instead, for prototyping purposes, I went to Home Depot and got Mirror Protective Film (like this https://www.amazon.com/Daytime-Privacy-Non-Adhesive-Decorative-Control/dp/B07P9Q4ZP8/ref=asc_df_B07P9Q4ZP8/?tag=hyprod-20&linkCode=df0&hvadid=385247960870&hvpos=&hvnetw=g&hvrand=13567255896448381332&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-846966847082&psc=1&tag=&ref=&adgrpid=81511522954&hvpone=&hvptwo=&hvadid=385247960870&hvpos=&hvnetw=g&hvrand=13567255896448381332&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-846966847082)
 This solved a lot of my problems as it comes in a large roll that coud be easily cut to any size. It also has an adhesive on one side that can be easily taken off the display after I was done. 
 
-Actually applying it was a bit of a challenge, as it would often stick to itself or get creases. I found the most succesful method was to lay it flat and then place the monitor on top of it face down. Then I used a credit card to squeeze out as many of the air bubbles as possible. 
+Actually applying it was a bit of a challenge, as it would often stick to itself or get creases. I found the most succesful method was to lay it flat and then place the monitor on top of it face down. Then I used a blade to trim the eges and used a credit card to squeeze out as many of the air bubbles as possible. 
+
+Test of applying the film
+![IMG_1452](https://user-images.githubusercontent.com/90526300/206881968-0457e715-af2d-4426-a9be-027a6969ac73.jpeg)
+
+First application of film
+![IMG_1504](https://user-images.githubusercontent.com/90526300/206881957-a15c10fa-ce47-4803-bd25-731235434892.jpeg)
+
+After Smooothing out air bubbles
+![IMG_1505](https://user-images.githubusercontent.com/90526300/206881981-3a75daa5-54b4-41fd-865f-3d539bd80382.jpeg)
+
 
 **The IR Frame**
 In order to enable the touch features of turning the display on and off and crossing out to-do items, I needed an IR frame. I ordered one online (The actual item is no longer available, but this is similar, although significantly more expensive than the one I used https://www.amazon.com/dp/B082XRCQLZ?psc=1&ref=ppx_yo2ov_dt_b_product_details). I had to redownload drivers (included with the device) n order for it to work with the pi, but once that was set up, it was as simple as plugging it into the USB port and carefully positioning it to line up with the display. I used adhesive strips to mount it, and then it worked pretty well. 
 
+The frame
+![IMG_1506](https://user-images.githubusercontent.com/90526300/206881993-20c2a324-3898-41a5-9bfb-3fd48aa58d7d.jpeg)
+
+
 **Costuming**
 I was now left with a funky looking monitor/mirror. In order to make it look more like it would in a real context, I enclosed all of the framing and support stands in a simple cardboard box. I thought that jsut looked ugly, and given that this was meant to be a low-stress way of starting a day, I didn't like that. To fix this, I applied some wood grain contact paper to the outside to make it look more appealing. The pi and all the wire were simply placed on top of the monitor's support stand inside the box. 
 
+The assembled box
+![IMG_1526](https://user-images.githubusercontent.com/90526300/206882043-d94746fd-6549-4a56-bb1d-b0a62c4ed7f3.jpeg)
+
+Cladded
+![IMG_1549](https://user-images.githubusercontent.com/90526300/206882057-e6d530c1-e65d-4b69-b4b8-a9508fb51ec7.jpeg)
+![IMG_1548](https://user-images.githubusercontent.com/90526300/206882069-c85bc25f-1e7a-4dbe-a82b-8f4c0b9d7481.jpeg)
+
+Finished Device Running the program
+![IMG_1533](https://user-images.githubusercontent.com/90526300/206882105-99e5ec07-2744-44c4-85fa-6e6039d24f3c.jpeg)
+
 ## User Testing and iteration
-I asked a few of my friends to come over and try out the device. Some of the key feedback was that the visual display was pretty effective, but that they did not realize that the to-do's could be checked off. I went back into code to add the checkboxes next to the items and then people seemed to discover this more efficiently. Other people commented that they didn't like that it only worked with Microsoft's to-do app because they use something different. I thought this was fair feedback, but I did not fix it as this was proof-of-concept and that would not enable significantly improved interaction. I also did not take the feedback for real-time refresh rates because I did not want tobe putting in that many API calls and I do not think that outside of demo pruposes there is a real use case of standing at the bathroom mirroa and updating your calendar on your phone. 
+**Taken Feedback**
+I asked a few of my friends to come over and try out the device. Some of the key feedback was that the visual display was pretty effective, but that they did not realize that the to-do's could be checked off. I went back into code to add the checkboxes next to the items and then people seemed to discover this more efficiently. I also increased the font size acrsoss the baord because people said it was challenging to read. 
+
+**Rationale for Feedback Not Taken**
+Other people commented that they didn't like that it only worked with Microsoft's to-do app because they use something different. I thought this was fair feedback, but I did not fix it as this was proof-of-concept and that would not enable significantly improved interaction. I also did not take the feedback for real-time refresh rates because I did not want to be putting in that many API calls and I do not think that outside of demo pruposes there is a real use case of standing at the bathroom mirror and updating your calendar on your phone. Lastly, people comented that the location for weather should update based on where you are phycially. Again, as this would be stationary in the real world, I did not find that to be a compelling use of effort. 
+
+**Key Notes from In Class Demo**
+A key note I picked up on when more people were using the device during the science fair style in-class demo day was that it was not obvious which features were touch enabled and what they could do. In future development I would want to add things to all modules like scrolling through the weather and calendar events or clicking on a headline to bring up more info. These would be based on watching users interact with the product, see what they want a touch to do, and then making that happen. Similarly, the square on/off button is not necessarily discoverable and perhaps some animation or a soft glow would be helpful in indicating that it can be pressed. 
+
+However, people genuinely seemed to enjoy the project and understood how it could be used. They found the features generally useful and tought the mirror and touch were cool and interesting. 
+
+People Using Device
+![IMG_1535](https://user-images.githubusercontent.com/90526300/206882121-8d040ac5-c174-4bef-aa2a-24049c51e9e5.jpeg)
+![IMG_1537](https://user-images.githubusercontent.com/90526300/206882124-165a3611-e44b-4ad4-8471-9466d002d2a7.jpeg)
+![IMG_1538](https://user-images.githubusercontent.com/90526300/206882126-5a7da937-a229-4e2c-b9f6-62815f96eae8.jpeg)
+
+
+## Video of Device in Action
+https://user-images.githubusercontent.com/90526300/206881790-3b8ead75-ebd4-4455-90bb-5affcd5d3e58.mp4
+
+
+## Reflections
