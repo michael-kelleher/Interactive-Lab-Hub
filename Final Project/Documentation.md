@@ -87,6 +87,8 @@ In order to enable the touch features of turning the display on and off and cros
 The frame
 ![IMG_1506](https://user-images.githubusercontent.com/90526300/206881993-20c2a324-3898-41a5-9bfb-3fd48aa58d7d.jpeg)
 
+Mounted
+![IMG_1546](https://user-images.githubusercontent.com/90526300/206882209-b858d9a8-dfa4-4a67-ae87-0909d5e32c27.jpg)
 
 **Costuming**
 I was now left with a funky looking monitor/mirror. In order to make it look more like it would in a real context, I enclosed all of the framing and support stands in a simple cardboard box. I thought that jsut looked ugly, and given that this was meant to be a low-stress way of starting a day, I didn't like that. To fix this, I applied some wood grain contact paper to the outside to make it look more appealing. The pi and all the wire were simply placed on top of the monitor's support stand inside the box. 
@@ -122,5 +124,7 @@ People Using Device
 ## Video of Device in Action
 https://user-images.githubusercontent.com/90526300/206881790-3b8ead75-ebd4-4455-90bb-5affcd5d3e58.mp4
 
+Note that the film had begun peeling off quite badly by the time the video was filmed and I did not want to purchase new adhesive to attach the frame again, so I left it as is. 
 
 ## Reflections
+
