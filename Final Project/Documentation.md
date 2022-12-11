@@ -125,6 +125,3 @@ People Using Device
 https://user-images.githubusercontent.com/90526300/206881790-3b8ead75-ebd4-4455-90bb-5affcd5d3e58.mp4
 
 Note that the film had begun peeling off quite badly by the time the video was filmed and I did not want to purchase new adhesive to attach the frame again, so I left it as is. 
-
-## Reflections
-
